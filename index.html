@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey for Students</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey for Students</h1>
+    <p id="description">Thank you for your time.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name" required/></label>
+        <label id="email-label">Email: <input type="email" id="email" placeholder="Enter your email" required/></label>
+        <label id="age-label">Age (optional): <input type="number" id="age" min="1" max="120" placeholder="Age"></label>
+        <label>What option best describes your current position?
+          <select id="dropdown" required>
+            <option disabled selected>Select current position</option>
+            <option>High School Student</option>
+            <option>College Student</option>
+            <option>Full Time Learner</option>
+            <option>Full Time Job</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label> Would you say that you are happy?
+          <label><input type="radio" name="recommend" class="inline" value="definitely" required/> Definitely</label>
+          <label><input type="radio" name="recommend" class="inline" value="soemtimes"/> Sometimes</label>
+          <label><input type="radio" name="recommend" class="inline" value="maybe"/> Maybe</label>
+          <label><input type="radio" name="recommend" class="inline" value="not-sure"/> Not sure</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>How many hours do you study a day (on average)? <input type="number" id="hours-study" placeholder="Hours" required/></label>
+ 
+        <label> Would you like to study more than you do?
+          <label><input type="radio" name="study-more" class="inline" value="yes" required/> Yes</label>
+          <label><input type="radio" name="study-more" class="inline bottom" value="no"/> No</label>
+        </label>
+        <br>
+        <label required> What are you working towards?
+          <label><input type="checkbox" name="improved" value="gpa" class="inline" required/> GPA</label>
+          <label><input type="checkbox" name="improved" value="job" class="inline" required/> Job</label>
+          <label><input type="checkbox" name="improved" value="consistency" class="inline" required/> Consistency</label>
+          <label><input type="checkbox" name="improved" value="mental-health" class="inline" required/> Mental health</label>
+          <label><input type="checkbox" name="improved" value="physical-health" class="inline" required/> Physical health</label>
+          <label><input type="checkbox" name="improved" value="social-skills" class="inline" required/> Social skills</label>
+          <label><input type="checkbox" name="improved" value="general-happiness" class="inline bottom" required/> General happiness</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Any additional thoughts?
+          <textarea bio="suggestions" rows="3" cols="30" placeholder="Type here..."></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit"/>
+      </fieldset>
+    </form>
+  </body>
+</html>
